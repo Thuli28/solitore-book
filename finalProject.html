@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solitaire Book</title>
+    <style>
+      h1 {
+        text-align: center;
+        margin: 0;
+      }
+      h2 {
+        text-align: center;
+        margin: 10px;
+      }
+      img {
+        display: block;
+        margin: auto;
+        max-width: 100%;
+      }
+      p {
+        line-height: 1.5;
+        text-align: center;
+        margin: 5px;
+      }
+      a {
+        color: palevioletred;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      button {
+        display: block;
+        margin: auto;
+        padding: 15px 23px;
+        background: pink;
+        color: black;
+        font-size: 15px;
+        line-height: 22px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0.3);
+        border: 1px solid black;
+        border-radius: 15px;
+        transition: all 200ms ease-in-out;
+        cursor: pointer;
+      }
+      button:hover {
+        background: white;
+        color: palevioletred;
+        border: 1px solid palevioletred;
+      }
+      hr {
+        margin: 10px;
+      }
+      .center {
+        text-align: center;
+      }
+      span {
+        color: palevioletred;
+        font-weight: bold;
+      }
+      div {
+        max-width: 800px;
+        padding: 5px 50px;
+        margin: 0 auto;
+        background-image: linear-gradient(
+          to right,
+          rgb(180, 180, 228),
+          rgb(250, 234, 237)
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>🍂 I love Solitaire book</h1>
+      <h2>
+        <em>By</em>
+        <br />
+        Alice Oseman🍃
+      </h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/165/218/original/413Pe_KgmHL._AC_SY350_QL15_.jpg?1746712442"
+        alt="Solitaire book"
+        width="200"
+      />
+      <p>
+        <strong><em>🍁 Solitaire</em> </strong>strong the story of Tori Spring
+        (sister to Charlie of Heartstopper fame), a lonely 16-year-old girl
+        whose life is upended by high-spirited new kid Michael Holden and the
+        mysterious prank-pulling blog “Solitaire.” Unflinchingly honest and
+        filled with suspense, Tori's story embraces the messiness of being a
+        teenager. I could not put this book down.🍀
+      </p>
+      <p>
+        <a
+          href="https://www.amazon.co.za/Solitaire-Alice-Oseman/dp/1338863428"
+          target="_blank"
+        >
+          Get a book
+        </a>
+      </p>
+      <button>🍂 Join a fan page</button>
+      <hr />
+      <p class="center">
+        Thank you!🍁<span> Coded by Malethola Raditsela</span>
+      </p>
+    </div>
+    <script>
+      function joinUs() {
+        let name = prompt("What is your first name?");
+        let email = prompt("What is your email adress?");
+        let number = prompt("What is your phone number?");
+        let invite = prompt(
+          "Whould you like us to send an invite link on your sms or email?"
+        );
+        invite = invite.toLocaleUpperCase().trim();
+        if (invite === "sms") {
+          alert(
+            "Thank you " + name + "! Please watch your sms for an invite 🍂"
+          );
+        } else {
+          alert(
+            "Thank you " + name + "! Please watch your email for an invite 🍂"
+          );
+        }
+      }
+      let joinFanPageButton = document.querySelector("button");
+      joinFanPageButton.addEventListener("click", joinUs);
+    </script>
+  </body>
+</html>
